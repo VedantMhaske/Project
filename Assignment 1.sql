@@ -1,0 +1,16 @@
+create database manufacture;
+use manufacture;
+create table company(name varchar(15) , color varchar(15) , bodytype varchar(15), fueltype varchar(15) , chassi_no int primary key );
+insert into company values("Creata","Black","SUV","Desiel",2323);
+insert into company values("Fortuner","Nardo Grey","SUV","Petrol",0001);
+insert into company values("Ciaz","White","Sedan","Desiel",9440);
+insert into company values("Swift","Red","Hatchback","CNG",5032);
+insert into company values("Thar","Black","SUV","Desiel",4747);
+insert into company values("Verna","Blue","Sedan","Petrol",1000);
+select * from company;
+alter table company rename column color to car_color;
+alter table company rename column bodytype to vehicle_type;
+alter table company modify column fueltype varchar(20);
+truncate table company;
+show tables;
+drop table company;
